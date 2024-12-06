@@ -1,0 +1,4 @@
+postgresql_admin_password = "placeholderpassword"
+postgresql_user_password = "placeholderpassword"
+postgresql_replication_password = "placeholderpassword"
+

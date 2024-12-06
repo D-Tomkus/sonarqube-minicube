@@ -1,0 +1,16 @@
+global:
+  postgresql:
+    auth:
+      username: "sonarUser"
+      database: "sonarDB"
+      existingSecret: "postgresql-secret"
+      secretKeys:
+        adminPasswordKey: "postgres-password"
+        userPasswordKey: "password"
+        replicationPasswordKey: "postgresql-password"
+        
+
+primary:
+  persistence:
+    enabled: true
+    size: 8Gi

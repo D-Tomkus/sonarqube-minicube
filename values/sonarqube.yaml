@@ -1,0 +1,16 @@
+postgresql:
+  enabled: false
+  postgresqlServer: "postgresql" 
+  postgresqlUsername: "sonarUser"
+  postgresqlDatabase: "sonarDB"
+  existingSecret: "postgresql-secret"
+  secretKey: "password"
+
+
+ingress:
+  enabled: true
+  labels: {}
+  hosts:
+    - name: "sonar.test.com" 
+      path: /
+      pathType: Prefix
